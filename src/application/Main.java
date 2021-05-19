@@ -13,10 +13,8 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		AreaTriangulo x, y;
-
-		x = new AreaTriangulo();
-		y = new AreaTriangulo();
+		AreaTriangulo x = new AreaTriangulo();
+		AreaTriangulo y = new AreaTriangulo();
 
 		System.out.println("Enter the measure of triangle X: ");
 		x.a = sc.nextDouble();
@@ -27,16 +25,17 @@ public class Main {
 		y.a = sc.nextDouble();
 		y.b = sc.nextDouble();
 		y.c = sc.nextDouble();
-		
+
 		double areaX = x.area();
 		double areaY = y.area();
-		
+
 		System.out.printf("Triagle X area: %.4f%n", areaX);
 		System.out.printf("Triagle Y area: %.4f%n", areaY);
-		
+
 		if (areaX > areaY) {
 			System.out.println("Larger area: X");
-		} else { System.out.println("Larger area: Y");
+		} else {
+			System.out.println("Larger area: Y");
 
 		}
 
